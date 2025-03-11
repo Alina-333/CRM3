@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>CRM</title>
+  <!-- <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="page">
+
+  <fieldset class="dialog">
+
+    <h1 class="form__title">ДОБАВИТЬ ТОВАР</h1>
+
+    <form class="form">
+
+      <fieldset class="form-container">
+
+        
+          
+          <fieldset class="form__group">
+          <label for="name" class="form__label">НАИМЕНОВАНИЕ
+          </label>
+          <input type="text" id="name" name="name" class="form__input">
+          </fieldset>
+
+        <fieldset class="form__group">
+          <label for="category" class="form__label">КАТЕГОРИЯ
+          </label>
+          <input type="text" id="category" name="category" class="form__input">
+        </fieldset>
+
+        <fieldset class="form__group">
+          <label for="unit" class="form__label">ЕДИНИЦЫ ИЗМЕРЕНИЯ
+          </label>
+          <input type="text" id="unit" name="unit" class="form__input">
+        </fieldset>
+
+        <fieldsetv class="form__group">
+          <label for="discount" class="form__label">ДИСКОНТ
+          </label>
+          <fieldset class="row">
+
+            <!-- <input class="form__real-checkbox" checked type="checkbox" name="discount" id="yes">
+            <span class="form__custom-checkbox"></span> -->
+
+            <label class="checkbox" >
+              <input class="checkbox__input" checked type="checkbox" name="discount" id="yes">
+              <div class="checkbox__checkmark"></div>
+            </label>
+
+            <input class="form__input-2" type="text" name="discount-text" id="discount-text" 
+            nodisabled />
+          </fieldset>
+        </fieldsetv>
+
+        <fieldset class="form__group">
+          <label for="description" class="form__label">ОПИСАНИЕ
+          </label>
+          <textarea id="description" name="description" class="form__textarea"></textarea>
+        </fieldset>
+
+        <fieldset class="form__group">
+          <label for="quantity" class="form__label">КОЛИЧЕСТВО
+          </label>
+          <input type="number" id="quantity" name="quantity" class="form__input">
+        </fieldset>
+
+        <fieldset class="form__group">
+          <label for="price" class="form__label">ЦЕНА
+          </label>
+          <input type="text" id="price" name="price" class="form__input">
+        </fieldset>
+
+      </fieldset>
+
+    </form>
+
+    <button type="submit" class="form__button">ДОБАВИТЬ&nbsp;ТОВАР
+    </button>
+
+    <!-- <a class="close" href="#">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 2L22 22" stroke="#6E6893" stroke-width="3" stroke-linecap="round" />
+        <path d="M2 22L22 2" stroke="#6E6893" stroke-width="3" stroke-linecap="round" />
+      </svg>
+    </a> -->
+
+  </fieldset>
+
+
+
+
+
+</body>

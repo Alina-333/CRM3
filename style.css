@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+}
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #F2F0F9;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: #6e6893;
+    margin-bottom: 99px;
+    margin-top: 104px;
+    margin-left: 106px;
+    margin-right: 106px;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.dialog{
+  max-width: 792px;
+  padding: 32px 106px 99px;
+  background-color: red;
+
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+  background: #f2f0f9;
+  position: relative;
+  vertical-align: middle;/* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; */
+}
+
+.form__title {
+
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6e6893;
+
+  margin-bottom: 43px;
+}
+.line {
+  position: relative;
+  bottom: 30px;
+}
+
+/* .form {
+  background-color: #9d8fcf;
+  text-align: left;
+
+  button{
+    margin-top: 32px;
+    margin-right: 28px;
+  }
+  position: relative;
+} */
+
+.form-container {
+    width: 580px;
+    height: 403px;
+    background: #FFFFFF;
+    padding: 28px 38px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* align-items: center; */
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "a b"
+    "c b"
+    "d e"
+    "f g"
+    "h i";
+    /* display: flex;
+    flex-direction: column; */
+    gap: 12px;
+
+    text-align: left;
+}
+
+
+  .form__group1 {
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .form__group2 {
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .form__group3 {
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .form__group4 {
+    grid-area: f;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .form__group5 {
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .form__group6 {
+    grid-area: e;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .form__group7 {
+    grid-area: g;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .form__label {
+    margin-left: 10px;
+
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #6e6893;
+
+  }
+  
+  .form__input,
+  .form__textarea {
+    width: 250px;
+    height: 40px;
+    padding: 12px 12px;
+    font-size: 12px;
+    /* border: 1px solid #CCCCCC; */
+    border: none;
+    border-radius: 8px;
+    background-color: #F2F0F9;
+    outline: none;
+    transition: border 0.2s;
+    text-align: left;
+  }
+  
+  .form__input:focus,
+  .form__textarea:focus {
+    border-color: #5c5cff;
+  }
+  
+  .form__textarea {
+    resize: none;
+    height: 112px;
+    text-align: left;
+  }
+  
+  /* .form__checkbox {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: #6e6893;
+    background-color: #F2F0F9;
+    border: 0;
+    border-radius: 6px;
+  } */
+
+  .form__real-checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    /* appearance: none; */
+  }
+
+  .form__custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: #6e6893;
+    background-color: #F2F0F9;
+    border: 0;
+    border-radius: 6px;
+  }
+
+  /* .form__real-checkbox::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url("img/galochka.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    margin-top: 1px;
+    transition: 0.2s ease-in;
+  } */
+
+  .form__real-checkbox:checked + .form__custom-checkbox::before {
+    /* transform: translate(-50%, -50%) scale(1); */
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url("img/galochka.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    margin-top: 1px;
+    transition: 0.2s ease-in;
+  }
+  
+  .button-container {
+
+    /* width: 200px;
+    height: 39px; */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 25px;
+
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    /* align-items: center; */
+
+    /* margin-left: 458px; */
+    position: absolute;
+    right: 134px;
+    bottom: 28px;
+  }
+  
+  .button {
+    width: 250px;
+    height: 40px;
+    background-color: #6D5BD0;
+    /* width: 200px;
+    height: 39px; */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 25px;
+
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    /* align-items: center; */
+
+    /* margin-left: 458px; */
+    position: absolute;
+    right: 10px;
+    
+    bottom: 150px;
+  }
+  .form__button {
+    background-color: #6D5BD0;
+    /* width: 200px;
+    height: 39px; */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 25px;
+
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    /* align-items: center; */
+
+    /* margin-left: 458px; */
+    position: absolute;
+    right: 150px;
+    bottom: 90px;
+  }
+  .textic {
+    position: relative;
+    top: 20px;
+  }
+  
+  .form__button:hover {
+    background-color: #4A4ACB;
+
+  }
+
+  .row{
+    width: 200px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .form__input-check{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: #6e6893;
+    background-color: #F2F0F9;
+    border: 0;
+    border-radius: 6px;
+    appearance: none
+  }
+  .form__input-2{
+    width: 200px;
+    height: 40px;
+    flex-grow: 1;
+    border-radius: 6px;
+    background-color: #EEEEEE;
+    border: none;
+    pointer-events: none;
+  }
+
+  .close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+
