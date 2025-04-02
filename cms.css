@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+  }
+  html {
+      box-sizing: border-box;
+  }
+  
+  body {
+      font-family: "Inter", sans-serif;
+      background-color: #F2F0F9;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      color: #6e6893;
+      margin-bottom: 99px;
+      margin-top: 104px;
+      margin-left: 106px;
+      margin-right: 106px;
+  }
+  
+  .page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+  }
+  
+  .dialog2{
+    width: 1300px;
+    height: 1008px;
+    padding: 32px 106px 99px;
+    background-color: red;
+  
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+    background: #f2f0f9;
+    position: relative;
+    vertical-align: middle;/* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+  }
+  
+  .form__title2 {
+  
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #6e6893;
+  
+    margin-bottom: 7px;
+  }
+  .line {
+    position: relative;
+    bottom: 20px;
+  }
+  
+  /* .form {
+    background-color: #9d8fcf;
+    text-align: left;
+  
+    button{
+      margin-top: 32px;
+      margin-right: 28px;
+    }
+    position: relative;
+  } */
+  
+  .form-container2 {
+      display: grid;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      grid-template-columns: 1100px;
+      grid-template-rows: 60px 45px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 45px ;
+      grid-area: "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g"
+      "h"
+      "i"
+      "j"
+      "k"
+      "l"
+      "m";
+      width: 1100px;
+      height: 762px;
+      background: #FFFFFF;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      /* align-items: center; */
+      font-size: 12px;
+      
+  }
+  
+    .textic2 {
+      position: relative;
+      bottom: 20px;
+      left: 870px;
+      margin: 0 auto;
+    }
+
+    .head-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        width: 1100px;
+        height: 60px;
+        border-radius: 20px;
+        
+    }
+
+    .filter-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #FFFFFF;
+        border-color: #c6c2de;
+        width: 108px;
+        height: 40px;
+        border-radius: 6px;
+        background-color: #FFFFFF;
+        padding: 10px 25px;
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: uppercase;
+        color:black;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        align-items: center;
+        position: relative;
+        left: 20px;
+        top: 15px;
+    }
+
+    .filter-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: #FFFFFF;
+      width: 1100px;
+      height: 45px;
+      text-align: right;
+      justify-content: space-between;
+      padding: 20px 20px;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #6e6893;
+      background: #f4f2ff;
+    }
+
+    .form__button2 {
+      background-color: #6D5BD0;
+      /* width: 200px;
+      height: 39px; */
+      color: #FFFFFF;
+      border: none;
+      padding: 10px 25px;
+  
+      font-weight: 600;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #fff;
+  
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      /* align-items: center; */
+  
+      /* margin-left: 458px; */
+      position: absolute;
+      right: 110px;
+      bottom: 855px;
+    }
+
+    .search {
+        border-radius: 6px;
+        width: 392px;
+        background: #f4f2ff;
+        display: flex;
+        justify-content: stretch;
+    }
+    
+    .search__field {
+        flex-grow: 1;
+        font-family: var(--font-family);
+    
+        font-weight: 400;
+        font-size: 12px;
+        color: #6e6893;
+    
+        border: none;
+        background-color: transparent;
+        padding: 15px 0 18px 40px;
+        position: relative;
+        left: 70px;
+    
+        outline: none;
+    }
+    
+    .search__btn {
+        position: relative;
+        right: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        border: none;
+        border-radius: 30px;
+        width: 101px;
+        height: 54px;
+        cursor: pointer;  
+    
+        outline: none;
+    
+        background: var(--2);
+    }
+
+    .items-container {
+      font-family:"arial";
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color:#FFFFFF;
+      width: 1100px;
+      height: 45px;
+      text-align: right;
+      justify-content: space-between;
+      padding: 20px 20px;
+      font-weight: 500;
+      font-size: 14px;
+      color: #25213b;
+      /* text-transform: uppercase; */
+      background: #FFFFFF;
+    }
+
+    /* .item1 {
+      position: relative;
+      right: 50px;
+    } */
+
+    .page-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: #FFFFFF;
+      width: 1100px;
+      height: 45px;
+      text-align: right;
+      justify-content: space-between;
+      padding: 20px 20px;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #6e6893;
+      background: #f4f2ff;
+      position: relative;
+      bottom: 45px;
+    }
+    .page-item1 {
+      position: relative;
+      left: 600px;
+      cursor: pointer;
+    }
+
+    .page-item2 {
+      position: relative;
+      left: 420px;
+    }
+    .page-item3 {
+      position: relative;
+      left: 200px;
+      cursor: pointer;
+    }
+
+    .page-item4 {
+      cursor: pointer;
+    }
+
+    .item-games {
+      position: relative;
+      left: 25px;
+    }
+
+    .item-ed {
+      position: relative;
+      left: 20px;
+    }
+
+    .item-quo {
+      position: relative;
+      left: 10px;
+    }
+
+    .item-name {
+      position: relative;
+      right: 55px;
+    }
