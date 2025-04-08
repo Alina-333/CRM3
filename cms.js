@@ -79,3 +79,15 @@ if (isNaN(productQuantity) || isNaN(productPrice)) {
   const totalPrice = productQuantity * productPrice;
   console.log(`На складе ${productQuantity} единицы товара "${productName}" на сумму ${totalPrice} деревянных`);
 }
+
+const name = prompt("Введите наименование товара");
+const category = prompt("Введите категорию товара");
+const count = Number(prompt("Введите количество товара"));
+const price = Number(prompt("Введите цену товара"));
+
+if (!isNaN(count) && !isNaN(price)) {
+  const total = count * price;
+  console.log(`На складе ${count} единицы товара "${name}" на сумму ${total} деревянных`);
+} else {
+  console.log("Вы ввели некорректные данные");
+}
