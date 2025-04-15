@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Конвертация Евро в Рубли</title>
+</head>
+<body>
+    <h2>Конвертер валют</h2>
+    <label>Сумма в евро: <input type="number" id="euroAmount"></label>
+    <button onclick="convert()">Конвертировать</button>
+    <p id="result"></p>
+
+    <script>
+        function convertEuroToRubles(euroAmount) {
+            const euroToDollar = 1.2;
+            const dollarToRuble = 73;
+            return euroAmount * euroToDollar * dollarToRuble;
+        }
+
+        function convert() {
+            const amount = parseFloat(document.getElementById('euroAmount').value);
+            const result = convertEuroToRubles(amount);
+            document.getElementById('result').innerText = `Сумма в рублях: ${result.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форматирование строки</title>
+</head>
+<body>
+    <h2>Форматирование строки</h2>
+    <label>Введите строку: <input type="text" id="inputString"></label>
+    <button onclick="formatInput()">Форматировать</button>
+    <p id="result"></p>
+
+    <script>
+        function formatString(str) {
+            return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+        }
+
+        function formatInput() {
+            const input = document.getElementById('inputString').value;
+            const result = formatString(input);
+            document.getElementById('result').innerText = `Результат: ${result}`;
+        }
+    </script>
+</body>
+</html>

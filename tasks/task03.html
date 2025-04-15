@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор скидок</title>
+</head>
+<body>
+    <h2>Калькулятор стоимости корзины</h2>
+    <label>Сумма корзины: <input type="number" id="total"></label><br>
+    <label>Количество товаров: <input type="number" id="itemsCount"></label><br>
+    <label>Промокод: <input type="text" id="promoCode"></label><br>
+    <button onclick="calculateTotal()">Рассчитать</button>
+    <p id="result"></p>
+
+    <script>
+        function calculate(total, itemsCount, promoCode) {
+            if (itemsCount > 10) {
+                total *= 0.97;
+            }
+
+            if (total > 30000) {
+                total = 30000 + (total - 30000) * 0.85;
+            }
+
+            if (promoCode === "METHED") {
+                total *= 0.9;
+            } else if (promoCode === "G3H2Z1" && total > 2000) {
+                total -= 500;
+            }
+
+            return total;
+        }
+
+        function calculateTotal() {
+            const total = parseFloat(document.getElementById('total').value);
+            const itemsCount = parseInt(document.getElementById('itemsCount').value);
+            const promoCode = document.getElementById('promoCode').value.trim();
+            const result = calculate(total, itemsCount, promoCode);
+            document.getElementById('result').innerText = `Итоговая сумма: ${result.toFixed(2)} руб.`;
+        }
+    </script>
+</body>
+</html>
